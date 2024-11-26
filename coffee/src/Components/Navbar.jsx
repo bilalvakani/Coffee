@@ -40,6 +40,16 @@ const Navbar = () => {
               Home
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
             </Link>
+            <Link
+              to="/menu"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="group relative inline-block cursor-pointer hover:text-brightColor"
+            >menu
+              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
+            </Link>
+            
             {/* Add more navigation links as needed */}
           </nav>
           
@@ -62,12 +72,32 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Links */}
+     
         <div
           className={`${
             menu ? "translate-x-0" : "-translate-x-full"
           } lg:hidden flex flex-col absolute bg-black text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           {/* You can uncomment the mobile menu links if needed */}
+          <Link
+              to="/"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="group relative inline-block cursor-pointer hover:text-brightColor"
+            >
+              Home
+              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
+            </Link>
+            <Link
+              to="/menu"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="group relative inline-block cursor-pointer hover:text-brightColor"
+            >menu
+              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
+            </Link>
         </div>
       </div>
     </div>

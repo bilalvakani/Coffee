@@ -35,6 +35,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Menu from './Components/Menu';
 import LoginPage from './Components/LoginPage';  // LoginPage ko import kar rahe hain
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
 
         </Routes>
       </main>
+      <Footer/>
     </Router>
   );
 }
