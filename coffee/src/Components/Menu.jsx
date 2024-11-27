@@ -10,6 +10,12 @@ import dounts3 from "../assets//DOUNTS (3).png"
 import dounts4 from "../assets/DOUNTS (4).png"
 import dounts5 from "../assets/DOUNTS (5).png"
 import dounts from "../assets/dounts.png"
+import coffee1 from "../images/images-removebg-preview (9).png"
+import coffee2 from "../images/images-removebg-preview (10).png"
+import coffee3 from "../images/images-removebg-preview (11).png"
+import coffee4 from "../images/images-removebg-preview (12).png" 
+import coffee5 from "../images/images-removebg-preview (13).png"
+import tea from "../images/images-removebg-preview (14).png"
 // Icons
 import { FaCoffee } from 'react-icons/fa';
 import { GiTeapot } from 'react-icons/gi'; // Corrected import for the teapot icon
@@ -127,10 +133,11 @@ const Menu = () => {
   <img src={img} alt="Chai" className="w-36 h-18 object-cover rounded-full" />
 </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-center">
-        <Producrcard img={img} title="Nespresso" />
-        <Producrcard img={img} title="Nespresso" />
-        <Producrcard img={img} title="Nespresso" />
-        <Producrcard img={img} title="Nespresso" />
+        {/* <Producrcard img={coffee1} title="Nespresso" /> */}
+        <Producrcard img={coffee2} title="Mocha coffee" />
+        <Producrcard img={coffee4} title="Caramel Latte
+" />
+        <Producrcard img={coffee3} title="Vanilla Latte" />
         <Producrcard img={img} title="Nespresso" />
       </div>
 
@@ -153,7 +160,7 @@ const Menu = () => {
 </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-center">
-        <Producrcard img={img} title="Chai" />
+        <Producrcard img={tea} title="Green tea" />
         <Producrcard img={img} title="Chai" />
         <Producrcard img={img} title="Chai" />
         <Producrcard img={img} title="Chai" />

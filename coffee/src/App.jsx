@@ -36,6 +36,7 @@ import Home from './Components/Home';
 import Menu from './Components/Menu';
 import LoginPage from './Components/LoginPage';  // LoginPage ko import kar rahe hain
 import Footer from './Components/Footer';
+import CartSummary from './Components/CartSummary';
 
 function App() {
   return (
@@ -51,6 +52,8 @@ function App() {
 
           {/* Login page */}
           <Route path="/login" element={<LoginPage />} />  {/* Login page route */}
+          <Route path="/cart-summary" element={<CartSummary />} />
+
 
         </Routes>
       </main>
