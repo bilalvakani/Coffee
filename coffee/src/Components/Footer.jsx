@@ -71,14 +71,13 @@ const Footer = () => {
             className=" hover:text-backgroundColor transition-all cursor-pointer"
             href="/"
           >
-            CafePulse@email.com
+            bilalVakani123@gmail.com
           </a>
           <a
             className=" hover:text-backgroundColor transition-all cursor-pointer"
             href="/"
           >
-            +84 958 248 966
-          </a>
+03370352040          </a>
           <a
             className=" hover:text-backgroundColor transition-all cursor-pointer"
             href="/"
@@ -94,7 +93,7 @@ const Footer = () => {
           @copyright developed by
           <span className=" text-backgroundColor">
             {" "}
-            champion programmers{" "}
+    Bilal vakani{" "}
           </span>
           | All rights reserved
         </p>

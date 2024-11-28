@@ -130,7 +130,7 @@ const Menu = () => {
   <span className="text-left">COFFEE</span>
   
   {/* Image on the right */}
-  <img src={img} alt="Chai" className="w-36 h-18 object-cover rounded-full" />
+  <img src={img} alt="Chai" className="w-32 h-14 object-cover rounded-full" />
 </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-center">
         {/* <Producrcard img={coffee1} title="Nespresso" /> */}

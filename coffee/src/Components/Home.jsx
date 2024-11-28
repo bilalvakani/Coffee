@@ -16,12 +16,14 @@ import ReviewCard from '../Layout/ReviewCard'
 import man1 from "../assets/man1 (1).png"
 import man2 from "../assets/man1 (2).png"
 import women from "../assets/man1 (3).png"
+import SpeechTest from './SpeechTest '
 
 const Home = () => {
   return (
     <div>
     <div className=" min-h-screen flex flex-col justify-center lg:flex-row lg:justify-between items-center lg:px-32 px-5 gap-10 bg-gradient-to-r from-[#FFDCAB] to-[#AB6B2E] ">
     <div className=" w-full lg:w-2/4 space-y-4 mt-14 lg:mt-0">
+    <SpeechTest/>
       <h1 className="font-semibold text-5xl text-center lg:text-start leading-tight mt-5">
         Start your day with a steaming cup of coffee
       </h1>
