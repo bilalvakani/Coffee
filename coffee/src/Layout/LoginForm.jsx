@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
+
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
@@ -22,6 +24,13 @@ const LoginForm = () => {
       <h2 className="text-2xl font-semibold text-center mb-6 text-backgroundColor">Login</h2>
       {error && <p className="text-red-500 text-center mb-4">{error}</p>}
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <input
+          type="name"
+          placeholder="Name"
+          className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brightColor"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
         <input
           type="email"
           placeholder="Email"

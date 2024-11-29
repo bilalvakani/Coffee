@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../Layout/Button'
 import img from '../assets/img.png'
 import Producrcard from '../Layout/Producrcard'
@@ -17,8 +17,30 @@ import man1 from "../assets/man1 (1).png"
 import man2 from "../assets/man1 (2).png"
 import women from "../assets/man1 (3).png"
 import SpeechTest from './SpeechTest '
+import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Simulating login status
+  const navigate = useNavigate(); // Hook for redirection
+
+  // Handle Add to Cart button click
+  const handleAddToCart = () => {
+    if (isLoggedIn) {
+      alert("Item added to cart!");
+      toast.success("Item added to cart!");  // You can replace this with actual cart logic
+
+    } else {
+      // Redirect to login page if not logged in
+      // alert("Please log in to add items to your cart.");
+      toast.error("Please log in to add items to your cart.");
+
+      navigate('/login');
+
+
+    }
+  }
   return (
     <div>
     <div className=" min-h-screen flex flex-col justify-center lg:flex-row lg:justify-between items-center lg:px-32 px-5 gap-10 bg-gradient-to-r from-[#FFDCAB] to-[#AB6B2E] ">
@@ -33,7 +55,7 @@ const Home = () => {
       </p>
 
       <div className=" flex flex-row gap-6">
-        <Button title="ADD TO CART" />
+        <Button onClick={handleAddToCart} title="ADD TO CART" />
         <Button title="MORE MENU" />
       </div>
     </div>
@@ -129,6 +151,13 @@ const Home = () => {
       </div>
     </div>
 
+    <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={true}
+        closeButton={true}
+      />
 
 
 

@@ -67,15 +67,15 @@ const SpeechTest = () => {
   };
 
   return (
-    <div>
+    <div className='mt-7'>
       {/* Button to trigger speech again */}
       <button
         onClick={handleButtonClick}
         className=" mt-4 gap-1 -500 text-black text-2xl font-bold rounded flex items-center "
       >
         {/* React Icon for Sound */}
-        <span>WELCOME TO COFFEE SHOP !</span>
-        <FaVolumeUp className=" text-xl" /> {/* You can change the size with the className */}
+        <span >WELCOME TO COFFEE SHOP !</span>
+        <FaVolumeUp className=" text-3xl mobile:text-5xl " /> {/* You can change the size with the className */}
 
       </button>
     </div>
