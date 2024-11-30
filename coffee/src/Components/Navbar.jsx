@@ -5,10 +5,12 @@ import { SiCoffeescript } from 'react-icons/si';
 import Button from "../Layout/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import { getAuth } from 'firebase/auth';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-
+  const auth = getAuth();
+  const user = auth.currentUser;
   const handleChange = () => {
     setMenu(!menu);
   };
@@ -26,6 +28,7 @@ const Navbar = () => {
               <SiCoffeescript size={25} />
             </span>
             <h1 className="text-xl font-semibold">CafePulse</h1>
+            
           </div>
 
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">

@@ -4,6 +4,17 @@ import { FaTimes } from "react-icons/fa"; // Close Icon
 
 const CartModal = ({ isOpen, closeModal, product }) => {
   const [quantity, setQuantity] = useState(1);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleAddToCart = () => {
+    if (isLoggedIn) {
+      // setIsModalOpen(true); // Open modal if logged in
+      toast.success("Item added to cart!");
+    } else {
+      toast.error("Please log in to add items to your cart.");
+      navigate('/login'); // Navigate to login page if not logged in
+    }
+  };
 
   // Safely calculate total price
   const totalPrice = (() => {
@@ -74,7 +85,7 @@ const CartModal = ({ isOpen, closeModal, product }) => {
           </div>
 
           {/* Add to Cart Button */}
-          <Button title="Add to Cart" />
+          <Button onClick={handleAddToCart} title="Add to Cart" />
         </div>
       </div>
     </div>

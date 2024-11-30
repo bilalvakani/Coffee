@@ -67,7 +67,7 @@ const SpeechTest = () => {
   };
 
   return (
-    <div className='mt-7'>
+    <div className='mt-20 '>
       {/* Button to trigger speech again */}
       <button
         onClick={handleButtonClick}
