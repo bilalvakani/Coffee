@@ -237,8 +237,13 @@ const RegistrationForm = () => {
           >
             Register
           </button>
+          <div className="text-center mt-4">
+          <span className="text-sm text-gray-500">you  have an account? </span>
+          <a href="/login" className="text-brightColor hover:text-darkColor">login up</a>
+        </div>
         </form>
       </div>
+      
     </div>
   );
 };

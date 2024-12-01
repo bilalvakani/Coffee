@@ -284,16 +284,15 @@ const Home = () => {
       <div className="min-h-screen flex flex-col justify-center lg:flex-row lg:justify-between items-center lg:px-32 px-5 gap-10 bg-gradient-to-r from-[#FFDCAB] to-[#AB6B2E]">
         <div className="w-full lg:w-2/4 space-y-4 mt-14 lg:mt-0">
           <SpeechTest />
-          <h2 className="font-semibold text-5xl text-center lg:text-start leading-tight mt-5">
+          <h1 className="font-semibold text-4xl text-center lg:text-start leading-tight mt-5">
           {userName ? <p>Hello, {userName}!</p> : <p>Welcome, Guest!</p>}
 
             Start your day with a steaming cup of coffee
-          </h2>
+          </h1>
           <p>
             Boost your productivity and build your mood with a glass of coffee in the morning
           </p>
-            {/* <h1>Welcome to the Home Page</h1>
-            {userName ? <p>Hello, {userName}!</p> : <p>Please log in to see your name.</p>} */}
+          
           <div className="flex flex-row gap-6">
             <Button onClick={handleAddToCart} title="ADD TO CART" />
             <Button title="MORE MENU" />
