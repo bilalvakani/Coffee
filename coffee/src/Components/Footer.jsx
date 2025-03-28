@@ -8,8 +8,7 @@ const Footer = () => {
         <h1 className=" font-semibold text-xl pb-4">CafePulse</h1>
         <p className=" text-sm">
           Welcome to our coffee haven! Explore our aromatic brews, savor
-          artisanal flavors, and discover the perfect roast to elevate your
-          daily ritual.
+          artisanal flavor.
         </p>
       </div>
       <div>
