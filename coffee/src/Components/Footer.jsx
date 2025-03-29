@@ -7,7 +7,6 @@ const Footer = () => {
       <div className=" w-full md:w-1/4">
         <h1 className=" font-semibold text-xl pb-4">CafePulse</h1>
         <p className=" text-sm">
-          Welcome to our coffee haven! Explore our aromatic brews, savor
           artisanal flavor.
         </p>
       </div>
