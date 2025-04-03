@@ -25,7 +25,6 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      {/* Toast container placed globally */}
       <ToastContainer 
         position="top-center"
         autoClose={1000}
