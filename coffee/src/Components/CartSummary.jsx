@@ -1,8 +1,8 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom"; // For navigation and accessing passed state
+import { useLocation, useNavigate } from "react-router-dom"; 
 
 const CartSummary = () => {
-  const { state } = useLocation(); // Access state passed from CartModal
+  const { state } = useLocation(); 
   const { product, quantity, totalPrice } = state || {};
   const navigate = useNavigate();
 
