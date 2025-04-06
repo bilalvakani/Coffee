@@ -91,7 +91,7 @@ const Footer = () => {
           @copyright developed by
           <span className=" text-backgroundColor">
             {" "}
-    Bilal vakani{" "}
+    Bilal vakani{" "}AAAAAAAned
           </span>
           | All rights reserved
         </p>
